@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Service Request</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: #333333;
+    }
+</style>
+</head>
+<body>
+
+
+<form action="/Car-service-system/ServiceRequest">
+	<h1>Car Service Request</h1>
+    <label for="serviceRequest">Service Request</label>
+    <input type="text" id="serviceRequest" name="serviceRequest" placeholder="Enter service request" required />
+
+    <label for="carRegistrationNumber">Car Registration Number</label>
+    <input type="text" id="carRegistrationNumber" name="carRegistrationNumber" placeholder="Enter registration number" required />
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

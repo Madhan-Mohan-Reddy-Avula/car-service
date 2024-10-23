@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Portal</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light cyan background */
+            font-family: Arial, sans-serif; /* Font style */
+            display: flex; /* Flexbox layout */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        a {
+            text-decoration: none; /* Remove underline from links */
+            margin: 10px; /* Space between buttons */
+        }
+
+        button {
+            padding: 15px 30px; /* Button padding */
+            font-size: 18px; /* Font size */
+            color: white; /* Text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .signup-button {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .login-button {
+            background-color: #008CBA; /* Blue */
+        }
+
+        button:hover {
+            opacity: 0.8; /* Slightly transparent on hover */
+        }
+    </style>
+</head>
+<body>
+    <a href="customerRegister.html"><button class="signup-button">Signup</button></a>
+    <a href="customerLogin.html"><button class="login-button">Login</button></a>
+</body>
+</html>
